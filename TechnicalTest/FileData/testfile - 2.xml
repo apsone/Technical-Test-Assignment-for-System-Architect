@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<dataroot createdby="aps">
+<Transactions>
+	<Transaction id="Inv00003">
+	<TransactionDate>2019-01-23T13:45:10</TransactionDate>
+	<PaymentDetails>
+		<Amount>5.00</Amount>
+		<CurrencyCode>USD</CurrencyCode>
+	</PaymentDetails>
+	<PaymentDetails>
+		<Amount>4.00</Amount>
+		<CurrencyCode>MMK</CurrencyCode>
+	</PaymentDetails>
+	<Status>Approved</Status>
+	</Transaction>
+	<Transaction id="Inv00004">
+	<TransactionDate>2019-01-24T16:09:15</TransactionDate>
+	<PaymentDetails>
+		<Amount>12000.00</Amount>
+		<CurrencyCode>EUR</CurrencyCode>
+	</PaymentDetails>
+	<Status>Rejected</Status>
+	</Transaction>
+</Transactions>
+</dataroot>
