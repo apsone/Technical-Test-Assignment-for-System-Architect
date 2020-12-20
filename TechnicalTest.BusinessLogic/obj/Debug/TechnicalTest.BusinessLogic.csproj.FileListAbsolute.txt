@@ -1,0 +1,12 @@
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\TechnicalTest.BusinessLogic.dll
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\TechnicalTest.BusinessLogic.pdb
+D:\2c2p-master\TechnicalTest.BusinessLogic\obj\Debug\TechnicalTest.BusinessLogic.csprojAssemblyReference.cache
+D:\2c2p-master\TechnicalTest.BusinessLogic\obj\Debug\TechnicalTest.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\2c2p-master\TechnicalTest.BusinessLogic\obj\Debug\TechnicalTest.BusinessLogic.dll
+D:\2c2p-master\TechnicalTest.BusinessLogic\obj\Debug\TechnicalTest.BusinessLogic.pdb
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\TechnicalTest.BusinessLogic.dll.config
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\EntityFramework.dll
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\EntityFramework.xml
+D:\2c2p-master\TechnicalTest.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\2c2p-master\TechnicalTest.BusinessLogic\obj\Debug\TechnicalTest.BusinessLogic.csproj.CopyComplete

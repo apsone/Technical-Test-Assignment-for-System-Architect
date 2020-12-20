@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="C2PModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCSV">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="Guid" Nullable="false" />
+    <Property Name="TransID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TransDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RecordStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCSVPaymentDetail">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="Guid" Nullable="false" />
+    <Property Name="CSVId" Type="Guid" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblExcel">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="Guid" Nullable="false" />
+    <Property Name="TransID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TransDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RecordStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblXMLPaymentDetail">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="Guid" Nullable="false" />
+    <Property Name="XMLId" Type="Guid" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCSVs" EntityType="Self.tblCSV" />
+    <EntitySet Name="tblCSVPaymentDetails" EntityType="Self.tblCSVPaymentDetail" />
+    <EntitySet Name="tblExcels" EntityType="Self.tblExcel" />
+    <EntitySet Name="tblXMLPaymentDetails" EntityType="Self.tblXMLPaymentDetail" />
+  </EntityContainer>
+</Schema>

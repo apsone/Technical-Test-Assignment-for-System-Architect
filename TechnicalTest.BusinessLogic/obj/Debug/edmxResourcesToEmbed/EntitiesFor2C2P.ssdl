@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="C2PModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCSV">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TransID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TransDate" Type="datetime" Nullable="false" />
+    <Property Name="RecordStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCSVPaymentDetail">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CSVId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CurrencyCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblExcel">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TransID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TransDate" Type="datetime" Nullable="false" />
+    <Property Name="RecordStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblXMLPaymentDetail">
+    <Key>
+      <PropertyRef Name="Syskey" />
+    </Key>
+    <Property Name="Syskey" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="XMLId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CurrencyCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="C2PModelStoreContainer">
+    <EntitySet Name="tblCSV" EntityType="Self.tblCSV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCSVPaymentDetail" EntityType="Self.tblCSVPaymentDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblExcel" EntityType="Self.tblExcel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblXMLPaymentDetail" EntityType="Self.tblXMLPaymentDetail" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

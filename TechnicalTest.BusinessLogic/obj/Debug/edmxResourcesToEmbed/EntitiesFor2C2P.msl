@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="C2PModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tblCSVs">
+      <EntityTypeMapping TypeName="C2PModel.tblCSV">
+        <MappingFragment StoreEntitySet="tblCSV">
+          <ScalarProperty Name="Syskey" ColumnName="Syskey" />
+          <ScalarProperty Name="TransID" ColumnName="TransID" />
+          <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCSVPaymentDetails">
+      <EntityTypeMapping TypeName="C2PModel.tblCSVPaymentDetail">
+        <MappingFragment StoreEntitySet="tblCSVPaymentDetail">
+          <ScalarProperty Name="Syskey" ColumnName="Syskey" />
+          <ScalarProperty Name="CSVId" ColumnName="CSVId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblExcels">
+      <EntityTypeMapping TypeName="C2PModel.tblExcel">
+        <MappingFragment StoreEntitySet="tblExcel">
+          <ScalarProperty Name="Syskey" ColumnName="Syskey" />
+          <ScalarProperty Name="TransID" ColumnName="TransID" />
+          <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+          <ScalarProperty Name="RecordStatus" ColumnName="RecordStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblXMLPaymentDetails">
+      <EntityTypeMapping TypeName="C2PModel.tblXMLPaymentDetail">
+        <MappingFragment StoreEntitySet="tblXMLPaymentDetail">
+          <ScalarProperty Name="Syskey" ColumnName="Syskey" />
+          <ScalarProperty Name="XMLId" ColumnName="XMLId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
